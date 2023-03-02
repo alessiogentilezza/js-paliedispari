@@ -18,16 +18,13 @@ let chekNumber;
 
 do {
     numeroUtente = parseInt(prompt('Inserisci un nuemro da 1 a 5'));
-    chekNumber = (numeroUtente > 5);
+    chekNumber = ((isNaN(numeroUtente) || numeroUtente > 5));
 
     if (chekNumber) {
-        alert("INSERISCI UN NUMERO DA 1 A 5");
-    } else if (isNaN(numeroUtente)) {
-        alert("INSERISCI UN NUMERO ");
+        alert("INSERISCI UN NUEMRO DA 1 A 5");
     }
 
 } while (chekNumber)
-
 
 console.log("Numero Utente " + numeroUtente);
 
