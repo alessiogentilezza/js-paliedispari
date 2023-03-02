@@ -8,7 +8,9 @@ console.log("Numero Utente " + numeroUtente);
 // numero casuale generato per il computer da 1 a 5
 
 function generaNumeroCasuale(min, max) {
+
     let numeroCasuale = Math.floor(Math.random() * (max - min + 1)) + min;
+
     return numeroCasuale;
 }
 
@@ -18,10 +20,33 @@ console.log("Numero Pc " + numeroPC);
 
 // eseguo la somma dei due risultati
 
-const risultato = sommaDueNumeri(numeroUtente, numeroPC);
-console.log("Somma " + risultato);
+let risultatoSomma = sommaDueNumeri(numeroUtente, numeroPC);
+console.log("Somma " + risultatoSomma);
 
 function sommaDueNumeri(primoNumero, secondoNumero) {
+
     let somma = primoNumero + secondoNumero;
+
     return somma;
 }
+
+// calcolo pari e dispari
+
+function calcolaPariDispari(numeroDaControllare) {
+
+    let risultato = "";
+
+    if (numeroDaControllare % 2 == 0) {
+        risultato = 'PARI';
+    } else {
+        risultato = 'DISPARI';
+    }
+
+    return risultato;
+
+}
+
+// verifico se la somma è pari o dispari
+
+const checkRisultato = calcolaPariDispari(risultatoSomma);
+console.log("La somma dei due numeri è " + checkRisultato);
