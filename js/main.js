@@ -50,3 +50,17 @@ function calcolaPariDispari(numeroDaControllare) {
 
 const checkRisultato = calcolaPariDispari(risultatoSomma);
 console.log("La somma dei due numeri è " + checkRisultato);
+
+
+// vincitore
+
+if (checkRisultato == utentePadiDispari) {
+    alert("HAI VINTO!");
+    console.log("Vince l'utente");
+
+} else {
+    alert("MI DISPIACE HAI PERSO");
+    console.log('Vince il pc');
+}
+
+alert("VEDI CONSOLE PER DETTAGLIO...");
