@@ -65,7 +65,7 @@ for (let i = 0; i < 4; i++) {
 
     // vincitore
 
-    if (checkRisultato == utentePadiDispari) {
+    if (checkRisultato == lowerCaseWord) {
         alert("HAI VINTO!");
         console.log("Vince l'utente");
 
