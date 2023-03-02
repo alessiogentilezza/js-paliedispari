@@ -18,13 +18,16 @@ let chekNumber;
 
 do {
     numeroUtente = parseInt(prompt('Inserisci un nuemro da 1 a 5'));
-    // chekNumber = (utentePadiDispari !== "pari" && utentePadiDispari !== "dispari");
+    chekNumber = (numeroUtente > 5);
 
-    // if (check) {
-    //     alert("ATTENZIONE HAI INSERITO UN VALORE NON VALIDO");
-    // }
+    if (chekNumber) {
+        alert("INSERISCI UN NUMERO DA 1 A 5");
+    } else if (isNaN(numeroUtente)) {
+        alert("INSERISCI UN NUMERO ");
+    }
 
-} while (check)
+} while (chekNumber)
+
 
 console.log("Numero Utente " + numeroUtente);
 
