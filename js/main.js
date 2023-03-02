@@ -1,7 +1,16 @@
-for (let i = 0; i < 4; i++) {
+for (let i = 0; i < 5; i++) {
 
     let utentePadiDispari = (prompt('PARI o DISPARI ? Fai la tua scelta'));
     console.log(utentePadiDispari);
+
+    if ((utentePadiDispari !== "pari") || (utentePadiDispari !== "PARI") || (utentePadiDispari !== "DISPARI") || (utentePadiDispari !== "dispari")) {
+        alert("ATTENZIONE HAI INSERITO UN VALORE NON VALIDO");
+    }
+}
+    // if (utentePadiDispari != "pari" || "PARI" || "dispari" || "DISPARI") {
+    //     alert("ATTENZIONE");
+    // }
+
 
     let numeroUtente = parseInt(prompt('Inserisci un nuemro da 1 a 5'));
     console.log("Numero Utente " + numeroUtente);
@@ -14,7 +23,6 @@ for (let i = 0; i < 4; i++) {
 
     const lowerCaseWord = toLowerCase(utentePadiDispari);
     console.log(lowerCaseWord);
-
 
     // numero casuale generato per il computer da 1 a 5
 
@@ -73,7 +81,5 @@ for (let i = 0; i < 4; i++) {
         alert("MI DISPIACE HAI PERSO");
         console.log('Vince il pc');
     }
-
-}
 
 alert("VEDI CONSOLE PER DETTAGLIO...");
