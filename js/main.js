@@ -6,6 +6,15 @@ for (let i = 0; i < 4; i++) {
     let numeroUtente = parseInt(prompt('Inserisci un nuemro da 1 a 5'));
     console.log("Numero Utente " + numeroUtente);
 
+    // coverto tutto in minuscole
+
+    function toLowerCase(word) {
+        return word.toLowerCase();
+    }
+
+    const lowerCaseWord = toLowerCase(utentePadiDispari);
+    console.log(lowerCaseWord);
+
 
     // numero casuale generato per il computer da 1 a 5
 
@@ -39,9 +48,9 @@ for (let i = 0; i < 4; i++) {
         let risultato = "";
 
         if (numeroDaControllare % 2 == 0) {
-            risultato = 'PARI';
+            risultato = 'pari';
         } else {
-            risultato = 'DISPARI';
+            risultato = 'dispari';
         }
 
         return risultato;
